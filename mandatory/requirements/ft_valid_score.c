@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_valid_score.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gde-sa <gde-sa@student.42.fr>              +#+  +:+       +#+        */
+/*   By: gabriela <gabriela@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 11:27:02 by gabriela          #+#    #+#             */
-/*   Updated: 2024/02/05 17:31:41 by gde-sa           ###   ########.fr       */
+/*   Updated: 2024/02/12 15:41:19 by gabriela         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,12 @@ void	ft_validation_caracter(char *buffer, t_game **game, int *count_caracter)
 			(*game)->score->count_exit++;
 		if (buffer[i] == '1')
 			(*game)->score->count_tree++;
+		if (buffer[i] != 'CPE0')
+		{
+			ft_printf("\nError\nInvalid character.");
+			free(buffer);
+			ft_message_error(game);
+		}
 		i++;
 	}
 }

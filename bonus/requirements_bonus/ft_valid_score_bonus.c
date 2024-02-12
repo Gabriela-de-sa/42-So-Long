@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_valid_score_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gde-sa <gde-sa@student.42.fr>              +#+  +:+       +#+        */
+/*   By: gabriela <gabriela@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/31 14:38:02 by gabriela          #+#    #+#             */
-/*   Updated: 2024/02/06 14:13:10 by gde-sa           ###   ########.fr       */
+/*   Updated: 2024/02/12 16:18:17 by gabriela         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,16 @@ void	ft_return_score(t_game **game)
 		ft_printf("\nError\nThere is no enemy");
 }
 
+void	ft_check_caracter(t_game **game, int i, char *buffer)
+{
+	if (buffer[i] != 'CPE0')
+	{
+		ft_printf("\nError\nInvalid character.");
+		free(buffer);
+		ft_message_error(game);
+	}
+}
+
 void	ft_validation_caracter(char *buffer, t_game **game, int *count_caracter)
 {
 	int		i;
@@ -48,6 +58,7 @@ void	ft_validation_caracter(char *buffer, t_game **game, int *count_caracter)
 			(*game)->score->count_tree++;
 		if (buffer[i] == 'I')
 			(*game)->score->count_enemy++;
+		ft_check_caracter(game, i, buffer);
 		i++;
 	}
 }
