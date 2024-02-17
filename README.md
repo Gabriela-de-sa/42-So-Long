@@ -60,6 +60,8 @@ The mandatory part is divided into 3 parts:
 The entire project cannot under any circumstances have memory leaks.
 I used some projects that I had already done, which were get next line and libft that I used as an aid.
 
+NOTE - In the CMakeLists.txt file in the MLX42 directory, change the MLX version to 3.16.0 on line eight before compiling the project.
+
 ### Bonus part
 
 There was only an increase in functionality
