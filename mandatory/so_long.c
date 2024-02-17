@@ -10,6 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+Main function where I call all functions
+*/
+
 #include "include/so_long.h"
 #include "../libft/libft.h"
 
