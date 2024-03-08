@@ -44,7 +44,7 @@ void	ft_validation_caracter(char *buffer, t_game **game, int *count_caracter)
 			(*game)->score->count_exit++;
 		if (buffer[i] == '1')
 			(*game)->score->count_tree++;
-		if (buffer[i] != 'CPE0')
+		if (buffer[i] != 'CPE01')
 		{
 			ft_printf("\nError\nInvalid character.");
 			free(buffer);
