@@ -1,3 +1,5 @@
+https://github.com/Gabriela-de-sa/42-So-Long/assets/84455552/e47c00ed-89a9-4ca4-aa68-38d433a9ee82
+
 <h1 align="center">
 	SO-LONG
 </h1>
@@ -13,7 +15,7 @@
 ## 💡 About the project
 
 This project is a very small 2D game. Its purpose is to make you work with textures, sprites, and some other very basic gameplay elements.
-I titled my project Pirate Island.
+I titled my project: Pirate Island.
 
 ---
 
