@@ -5,7 +5,7 @@ https://github.com/Gabriela-de-sa/42-So-Long/assets/84455552/e47c00ed-89a9-4ca4-
 </h1>
 <div align="center">
 	<br>
-  <img  height="130em"  width="15%" src="https://game.42sp.org.br/static/assets/achievements/so_longm.png" />
+  <img  height="130em"  width="15%" src="https://raw.githubusercontent.com/ayogun/42-project-badges/refs/heads/main/badges/so_longm.png" />
     <br>
 </div>
 <p align="center">
